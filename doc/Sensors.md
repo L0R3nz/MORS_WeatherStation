@@ -29,6 +29,8 @@ For more accurate results, I plan to use multiple sensors for temperature, humid
 
 |Sensor               |[AS7331](Datasheets/AS7331.pdf)                          |[TLS2521](Datasheets/TLS2521.pdf)                        |
 |---------------------|---------------------------------------------------------|---------------------------------------------------------|
+|UV (A/B/C)           |:white_check_mark:                                       |:x:                                                      |
+|Ambient Light        |:x:                                                      |:white_check_mark:                                       |
 |SPI                  |:x:                                                      |:x:                                                      |
 |I2C                  |:white_check_mark:                                       |:white_check_mark:                                       |
 |Voltage              |2.7 - 3.6                                                |1.8 :heavy_exclamation_mark:
