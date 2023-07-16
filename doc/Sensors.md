@@ -23,6 +23,19 @@ For more accurate results, I plan to use multiple sensors for temperature, humid
 |Voltage              |1.71 - 3.6                                                   |1.08 - 3.6                     |1.70 - 3.6                       |
 |Current Consumption  |12 mA (Active)<br>1 mA (Low Power)<br>90 μA (Ultra Low Power)|2 μA (Average)                 |3 μA (Average)                   |
 
+## 2. Light Sensors Group
+
+:heavy_exclamation_mark: TLS2521 need much mover voltage than other sensors so it needs to be changed. :heavy_exclamation_mark:
+
+|Sensor               |[AS7331](Datasheets/AS7331.pdf)                          |[TLS2521](Datasheets/TLS2521.pdf)                        |
+|---------------------|---------------------------------------------------------|---------------------------------------------------------|
+|SPI                  |:x:                                                      |:x:                                                      |
+|I2C                  |:white_check_mark:                                       |:white_check_mark:                                       |
+|Voltage              |2.7 - 3.6                                                |1.8 :heavy_exclamation_mark:
+|Current Consumption  |2 mA (Active)<br>970 μA (Standby)<br>1 μA (Power Down)   |n/a
+
+<!-- ## 3. Wind Sensors Group -->
+<!-- ## 4. Rain Sensor Group -->
 
 <!-- Images and diagrams -->
 [SensorDiagram]: img/Sensors-diagram.svg
