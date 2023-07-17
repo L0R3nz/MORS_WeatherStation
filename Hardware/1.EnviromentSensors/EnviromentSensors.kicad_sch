@@ -581,6 +581,46 @@
         )
       )
     )
+    (symbol "power:PWR_FLAG" (power) (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "#FLG" (at 0 1.905 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "PWR_FLAG" (at 0 3.81 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "flag power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Special symbol for telling ERC where power comes from" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "PWR_FLAG_0_0"
+        (pin power_out line (at 0 0 90) (length 0)
+          (name "pwr" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+      (symbol "PWR_FLAG_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 1.27)
+            (xy -1.016 1.905)
+            (xy 0 2.54)
+            (xy 1.016 1.905)
+            (xy 0 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+    )
   )
 
   (junction (at 203.2 31.75) (diameter 0) (color 0 0 0 0)
@@ -771,6 +811,10 @@
     (stroke (width 0) (type default))
     (uuid 6ca8f86a-820d-450e-9e9f-2ce3eff3ead5)
   )
+  (wire (pts (xy 59.69 72.39) (xy 59.69 74.93))
+    (stroke (width 0) (type default))
+    (uuid 717df0ad-1f90-46c7-9b81-214e62955baa)
+  )
   (wire (pts (xy 199.39 102.87) (xy 201.93 102.87))
     (stroke (width 0) (type default))
     (uuid 739ea4de-5595-4d77-aed4-867d58dea6e1)
@@ -786,6 +830,10 @@
   (wire (pts (xy 167.64 102.87) (xy 180.34 102.87))
     (stroke (width 0) (type default))
     (uuid 7827ccc4-49d5-472c-a6bf-ea19fbbd5c0b)
+  )
+  (wire (pts (xy 68.58 74.93) (xy 68.58 72.39))
+    (stroke (width 0) (type default))
+    (uuid 7d3ea161-879e-404b-a576-be36d123eb3c)
   )
   (wire (pts (xy 180.34 102.87) (xy 199.39 102.87))
     (stroke (width 0) (type default))
@@ -1086,8 +1134,8 @@
     (property "Datasheet" "~" (at 238.76 45.72 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9a744b57-0135-4caf-9db3-48a77ea0cf40))
-    (pin "2" (uuid 8f3d5b58-269f-4dab-af9c-b8bd527ecdad))
+    (pin "1" (uuid 194bb849-742e-4895-9785-f9b3f4dad559))
+    (pin "2" (uuid 569e24f5-7d83-4cf6-b2b4-7279d8543491))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1112,7 +1160,7 @@
     (property "Datasheet" "" (at 40.64 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid dc6e2e1a-2961-4878-a967-e44977dd0bf1))
+    (pin "1" (uuid 7daf3af2-a451-4be3-b590-7545ce82773c))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1137,11 +1185,36 @@
     (property "Datasheet" "" (at 238.76 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 39d61457-b382-4879-a639-b4cd008a1fbd))
+    (pin "1" (uuid 7f67d2d7-37d9-413c-96af-f94d96784024))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR07") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 68.58 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 12b57a8d-dcee-4ac8-8886-79b178b69120)
+    (property "Reference" "#FLG02" (at 68.58 70.485 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 68.58 67.31 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 68.58 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 68.58 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 225a8d51-8891-45ec-8580-3dac9f3fbde9))
+    (instances
+      (project "EnviromentSensors"
+        (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
+          (reference "#FLG02") (unit 1)
         )
       )
     )
@@ -1162,8 +1235,8 @@
     (property "Datasheet" "~" (at 173.99 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 603aa7eb-a140-4492-b1d1-efe7b6ce56fb))
-    (pin "2" (uuid a3d90db6-0427-4a99-b0c2-8264f910d021))
+    (pin "1" (uuid 150c59ef-f337-4252-8dda-025ae8dc0574))
+    (pin "2" (uuid 400b1180-1ee8-4b3a-8af0-91e6aa45ebcb))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1188,7 +1261,7 @@
     (property "Datasheet" "" (at 113.03 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid e2f14e34-b351-46bc-8f84-bc0ce7b3f51e))
+    (pin "1" (uuid b3a8e6b1-4261-4442-ac2c-b6824a306e26))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1213,7 +1286,7 @@
     (property "Datasheet" "" (at 173.99 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d385cf8e-d810-43b5-ad3c-ddcf0135d9d0))
+    (pin "1" (uuid 56fec8bb-c0eb-4729-adfd-49803c2faa1d))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1238,11 +1311,36 @@
     (property "Datasheet" "" (at 238.76 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 61ac0a93-0776-4070-afc9-5f41a6858c9b))
+    (pin "1" (uuid cec0e88b-7ec2-4e08-95f9-980a224fa579))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR013") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:PWR_FLAG") (at 59.69 74.93 180) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2f14f46a-31ca-47ab-baa3-2b7cd2c98685)
+    (property "Reference" "#FLG01" (at 59.69 76.835 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (at 59.69 80.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 59.69 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 59.69 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dd8ae515-1059-475b-ab3c-36c202fb8eec))
+    (instances
+      (project "EnviromentSensors"
+        (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
+          (reference "#FLG01") (unit 1)
         )
       )
     )
@@ -1263,11 +1361,11 @@
     (property "Datasheet" "~" (at 31.75 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 93b26e16-da11-44b8-a834-4bd5548b7ffd))
-    (pin "2" (uuid 9400a45e-108d-42fe-a1c5-4798c0d8d83d))
-    (pin "3" (uuid 127232ad-fd31-4317-83dc-d4f3e4d70050))
-    (pin "4" (uuid 2f198b16-a4ff-4f32-bdb7-75642c8be46f))
-    (pin "5" (uuid e0f4686c-36ab-4b24-abb3-1971678b9164))
+    (pin "1" (uuid a941ad46-d2c3-4a47-8f7f-a2f4d381e5e0))
+    (pin "2" (uuid ad385e56-41b0-4c43-87ed-ec65df74b8f8))
+    (pin "3" (uuid 46ed62a3-3a1e-40de-bf0e-8a7ed862d146))
+    (pin "4" (uuid 20b33aa1-3982-4e56-b97b-8667e0924a5d))
+    (pin "5" (uuid 7deca35f-f076-4ff9-8303-d3072403bf36))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1292,7 +1390,7 @@
     (property "Datasheet" "" (at 200.66 130.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid d5b5828b-50f8-4ca0-86f2-2061decc69f9))
+    (pin "1" (uuid bfb054f9-ce67-437c-b43a-fca32ff26f9d))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1317,11 +1415,36 @@
     (property "Datasheet" "" (at 173.99 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6d1cc893-abe4-49d6-8eca-fbfcd8bc292f))
+    (pin "1" (uuid ab56b9fb-a69d-4b63-b208-f3f52c7b17b4))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR04") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 59.69 72.39 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 589dbfa8-ffa4-4bde-ae9d-e027475b7f3d)
+    (property "Reference" "#PWR015" (at 59.69 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 59.69 67.31 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 59.69 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 59.69 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid c55dc168-74d1-4f19-badf-a47d9dd3c974))
+    (instances
+      (project "EnviromentSensors"
+        (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -1342,7 +1465,7 @@
     (property "Datasheet" "" (at 173.99 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 07a884e8-652c-4e39-b091-b7a8b9d738f8))
+    (pin "1" (uuid a24d628b-5111-48b8-88c5-00b4718a3718))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1367,8 +1490,8 @@
     (property "Datasheet" "~" (at 52.07 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 505f73a2-aa80-46a5-96e3-611de662c539))
-    (pin "2" (uuid 0d79a43e-7bef-42e1-b249-4c6e11be13b3))
+    (pin "1" (uuid 245bf399-6a98-4a2b-900a-5a9afb5dfe09))
+    (pin "2" (uuid ee232e3a-0e44-47fd-b42b-681f4266bec8))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1393,7 +1516,7 @@
     (property "Datasheet" "" (at 40.64 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 82aab83a-fa29-4f1d-9d04-97bb9f9f6bc8))
+    (pin "1" (uuid f2e4fad0-d3be-442a-9212-b6db6a6a0095))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1418,8 +1541,8 @@
     (property "Datasheet" "~" (at 43.18 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a47a3c16-de87-4a49-b407-d7fa4219c901))
-    (pin "2" (uuid 73fdd716-b700-443f-a8a4-8fef88d89af9))
+    (pin "1" (uuid 603850b8-40f1-4589-b66c-2588ea8c5439))
+    (pin "2" (uuid 9f1eb552-1785-4ed6-b7bd-056c040fe9e4))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1444,16 +1567,16 @@
     (property "Datasheet" "https://www.st.com/resource/en/datasheet/lps22hb.pdf" (at 205.74 130.81 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid 2b1a057b-7194-4ef7-ba26-d0c96f6d44f1))
-    (pin "10" (uuid e3437878-0406-4cc2-940e-9fb3d2b4c439))
-    (pin "2" (uuid dae6451f-c868-4b97-8207-099dc24e47d0))
-    (pin "3" (uuid 56a546bf-0b3b-4d04-a4be-3e18373d3288))
-    (pin "4" (uuid 67d31fb1-641e-4f9d-9e76-0bccadf339da))
-    (pin "5" (uuid 8ad59c42-176d-4c43-92db-39964d31479e))
-    (pin "6" (uuid e3d6573e-fd34-4e96-b5f0-462ba26e9d02))
-    (pin "7" (uuid 382f0d8c-3bd8-480a-a55b-288313aba383))
-    (pin "8" (uuid cae55796-6388-40e4-a7e7-ed76f531665f))
-    (pin "9" (uuid ece02dd4-8d5b-4f48-a4b6-ed988bb12d23))
+    (pin "1" (uuid b4d94b25-d298-4ff8-910a-0e3cee6473ad))
+    (pin "10" (uuid 22a5126a-bf1a-4de7-83f2-e0ea89ec40be))
+    (pin "2" (uuid 61f3067a-6115-4c64-a326-ba10d515c61f))
+    (pin "3" (uuid ff16e1ca-db11-4745-a592-f0bd63ed61e2))
+    (pin "4" (uuid 227e34d7-85d6-42db-8a92-df12b1cddd35))
+    (pin "5" (uuid 12014f73-85ec-4ff6-bf2a-a6ea4dffd382))
+    (pin "6" (uuid 1f342c98-ba2e-4abe-9644-b8e2aed48d62))
+    (pin "7" (uuid 76e97d66-682f-456e-824e-5ec108659a17))
+    (pin "8" (uuid fbac3b29-6fbc-4171-8283-734f8fc0878c))
+    (pin "9" (uuid ebb3ea9e-0bca-4d86-81de-be84b81dd174))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1478,7 +1601,7 @@
     (property "Datasheet" "" (at 238.76 50.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 3463136b-12a6-4c71-bfe3-267a7da6c879))
+    (pin "1" (uuid d2b692c2-1b05-46a3-a44c-d558df470647))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1503,7 +1626,7 @@
     (property "Datasheet" "" (at 238.76 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 42307cf8-8a5b-431e-855f-2f94bc21893e))
+    (pin "1" (uuid a94c1134-6e0c-42a7-b6ad-7c11d95a047e))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1528,8 +1651,8 @@
     (property "Datasheet" "~" (at 238.76 35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 021e224e-d50b-4c20-8d83-21e6f7427a97))
-    (pin "2" (uuid ea329cc0-a57a-4b80-8f17-c40defc975ce))
+    (pin "1" (uuid 1415b0f7-ed53-4538-938c-d632d9ceb01b))
+    (pin "2" (uuid 47ceabda-c38d-4fe7-b593-b0ff0c75ad23))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1554,7 +1677,7 @@
     (property "Datasheet" "" (at 199.39 100.33 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid a76d2107-438c-4e68-aac5-71920b78f71d))
+    (pin "1" (uuid 7f658d96-e178-45bd-ad69-80666fb69018))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1579,8 +1702,8 @@
     (property "Datasheet" "~" (at 185.42 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 90aaea5c-46f4-4c5f-acd5-836735b0c02f))
-    (pin "2" (uuid ac3c4d3b-5713-48a4-9385-8c8088e8211b))
+    (pin "1" (uuid ad3f4260-df1c-4a15-b614-6b5c3d98e430))
+    (pin "2" (uuid a6e69d60-9f03-4207-8588-a5c49423ae7b))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1605,14 +1728,14 @@
     (property "Datasheet" "https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf" (at 205.74 53.34 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 1893fbe7-37ad-4088-ab98-f760624002c3))
-    (pin "2" (uuid 62f191ff-0a80-4c26-b971-2ba40e2a27ab))
-    (pin "3" (uuid 31bdc54c-c704-4c43-b31e-299f415192c8))
-    (pin "4" (uuid 2c01ed83-2f14-4052-aa3e-486ca6901fb2))
-    (pin "5" (uuid fa11b1e9-0ed3-4a19-8102-48f96872bd6d))
-    (pin "6" (uuid 044ac64f-093a-4b92-975b-986716395fce))
-    (pin "7" (uuid ef6f15e6-13b8-4d14-9439-9697ebbf55d3))
-    (pin "8" (uuid 8f37dfc7-8383-4df0-9d35-58c9bc9b399e))
+    (pin "1" (uuid f20ad12c-3c39-41df-81b2-b857bbd395b4))
+    (pin "2" (uuid dc36c2a7-6280-484f-a8d8-2015b12443f6))
+    (pin "3" (uuid 682589ee-1138-4431-8f12-00f15a6e5aab))
+    (pin "4" (uuid a00eca16-9019-4970-b495-8bde653af611))
+    (pin "5" (uuid 23ba929d-6cd5-4117-9ccb-2914b38d2ed2))
+    (pin "6" (uuid f4be2500-ef17-42f7-ba86-f0e5f2fa19e4))
+    (pin "7" (uuid 1517ac98-4242-4bbb-9b74-99af2eca31fc))
+    (pin "8" (uuid ae43f7c8-a526-4aca-8414-f3da47b3854a))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1637,12 +1760,37 @@
     (property "Datasheet" "~" (at 238.76 106.68 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6fcc92b5-3a87-49aa-bc82-0060f6b75612))
-    (pin "2" (uuid e9daa4c1-532a-4c45-a21c-a6fe9e144cfe))
+    (pin "1" (uuid fd4b14dc-4abe-476d-aa10-11296577590e))
+    (pin "2" (uuid 8c414757-dfb6-4e79-b6f8-2a955af2eafe))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "R4") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 68.58 74.93 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid c0ef37b0-5167-4883-8035-6e4db1782266)
+    (property "Reference" "#PWR016" (at 68.58 81.28 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 68.58 80.01 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 68.58 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 68.58 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d118936d-5921-46f5-8e81-58897cba4497))
+    (instances
+      (project "EnviromentSensors"
+        (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -1663,7 +1811,7 @@
     (property "Datasheet" "" (at 113.03 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 4e9a760e-e766-477b-9b89-e3f295d4dd10))
+    (pin "1" (uuid 812ad0de-ba46-421a-9498-bfba8c52398c))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1688,8 +1836,8 @@
     (property "Datasheet" "~" (at 167.64 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 2d5a43c2-8e77-41c6-943b-7be15ad67b8a))
-    (pin "2" (uuid 6edc6188-4694-47c1-9ed7-5dbe8d08c51d))
+    (pin "1" (uuid 1be43ca6-bbe0-442b-8bf2-9b10ca6e840d))
+    (pin "2" (uuid df8c62e2-87d0-473c-aa36-cccfcb48769d))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1714,8 +1862,8 @@
     (property "Datasheet" "~" (at 238.76 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 174f94ab-9605-47ba-a1ab-ba28666cd7a7))
-    (pin "2" (uuid 9eb830cc-6568-470a-b457-f8f51e7eaf98))
+    (pin "1" (uuid 63b9453c-d846-4f08-8a29-7a2fd9562462))
+    (pin "2" (uuid 273178a1-6549-4ba3-b77e-14a75aa26818))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1740,7 +1888,7 @@
     (property "Datasheet" "" (at 205.74 66.04 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f620fa3b-4673-484c-9974-80eeccb16f5a))
+    (pin "1" (uuid 80ef016f-50a3-4aab-ba29-3f887d781297))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1765,8 +1913,8 @@
     (property "Datasheet" "~" (at 180.34 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cfdf7f4f-9fd3-4648-b998-03a24f75d22a))
-    (pin "2" (uuid 8064f560-1273-4082-9674-7980f64461ba))
+    (pin "1" (uuid d4f9f0c4-8bd6-4783-8c30-93c488a3a107))
+    (pin "2" (uuid 0bee3b14-01b3-478e-a0c2-1d52b3ba49ac))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
@@ -1791,10 +1939,10 @@
     (property "Datasheet" "https://sensirion.com/media/documents/33FD6951/624C4357/Datasheet_SHT4x.pdf" (at 114.3 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (pin "1" (uuid e2d9c17b-3508-4c58-b53c-fd301207aeca))
-    (pin "2" (uuid f58c58ae-b583-4a3b-98ed-578640fa8b7e))
-    (pin "3" (uuid 86814d54-6775-4d39-b9e7-a2c2e12cecaa))
-    (pin "4" (uuid 25b3e916-1a93-4d8d-8869-57e5f643f6cd))
+    (pin "1" (uuid 2fb5f55f-39d5-4860-a378-336373149369))
+    (pin "2" (uuid 8fb1377f-ddc7-44fb-b6cf-0bccbc592427))
+    (pin "3" (uuid 89104486-4a68-4e3b-a656-40e560fefd56))
+    (pin "4" (uuid 4d435f0a-862d-4b8a-9941-b9f2d974222b))
     (instances
       (project "EnviromentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
