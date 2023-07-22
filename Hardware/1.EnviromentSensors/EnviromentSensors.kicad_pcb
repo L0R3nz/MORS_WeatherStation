@@ -163,10 +163,10 @@
       (net 2 "GND") (pinfunction "GND") (pintype "passive") (tstamp 4f18adf0-19e5-4234-a512-bcb08358068f))
     (pad "10" smd roundrect (at -0.5 -0.7625 270) (size 0.35 0.425) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 1 "+3.3V") (pinfunction "VDD") (pintype "power_in") (tstamp 2ef828d2-cc62-4d81-97ed-7030e08ec718))
-    (model "${KICAD6_3DMODEL_DIR}/Package_LGA.3dshapes/ST_HLGA-10_2x2mm_P0.5mm_LayoutBorder3x2y.wrl"
+    (model "${KIPRJMOD}/Component 3D Models/LPS22HB.STEP"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
@@ -691,6 +691,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "${KIPRJMOD}/Component 3D Models/BME680.STEP"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (footprint "Resistor_SMD:R_0402_1005Metric" (layer "F.Cu")
@@ -884,10 +889,10 @@
         )
       )
     )
-    (model "${KICAD6_3DMODEL_DIR}/Sensor_Humidity.3dshapes/Sensirion_DFN-4_1.5x1.5mm_P0.8mm_SHT4x_NoCentralPad.wrl"
+    (model "${KIPRJMOD}/Component 3D Models/SHT45.STEP"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
+      (rotate (xyz -90 0 0))
     )
   )
 
