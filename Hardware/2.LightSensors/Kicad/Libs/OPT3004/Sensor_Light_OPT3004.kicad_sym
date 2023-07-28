@@ -6,7 +6,7 @@
     (property "Value" "OPT3004" (at 0 7.62 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 0 0 0)
+    (property "Footprint" "OPT3004:SON65P200X200X65-7N" (at -0.127 -9.906 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (at 0 0 0)
