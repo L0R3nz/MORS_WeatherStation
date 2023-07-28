@@ -36,6 +36,9 @@ For more accurate results, I plan to use multiple sensors for temperature, humid
 |Voltage              |2.7 - 3.6                                                |1.8 :heavy_exclamation_mark:
 |Current Consumption  |2 mA (Active)<br>970 μA (Standby)<br>1 μA (Power Down)   |n/a
 
+TODO:
+- [ ] OPT3004 can replace TLS2521 due to the fact that this sensor is 3.6V and it will avoid to use voltige converter 
+
 <!-- ## 3. Wind Sensors Group -->
 <!-- ## 4. Rain Sensor Group -->
 
