@@ -2561,7 +2561,7 @@
     (property "Value" "Conn_01x10_Pin" (at 26.035 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x10_P1.27mm_Horizontal" (at 25.4 52.07 0)
+    (property "Footprint" "Connector_JST:JST_PH_S10B-PH-K_1x10_P2.00mm_Horizontal" (at 25.4 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 52.07 0)
