@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Sensor_UV_AS7331")(type "KiCad")(uri "${KIPRJMOD}/Libs/AS7331/Sensor_UV_AS7331.kicad_sym")(options "")(descr ""))
+  (lib (name "Sensor_Light_OPT3004")(type "KiCad")(uri "${KIPRJMOD}/Libs/OPT3004/Sensor_Light_OPT3004.kicad_sym")(options "")(descr ""))
+)
