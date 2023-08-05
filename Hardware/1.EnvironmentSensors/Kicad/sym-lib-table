@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "SF2_FILTER_CAP")(type "KiCad")(uri "${KIPRJMOD}/Libs/SF2_FILTER_CAP/SF2_FILTER_CAP.kicad_sym")(options "")(descr ""))
+)

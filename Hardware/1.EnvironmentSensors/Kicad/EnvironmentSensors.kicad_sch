@@ -6,7 +6,7 @@
 
   (title_block
     (title "Enviroment Sensors")
-    (date "2023-07-30")
+    (date "2023-08-05")
     (rev "A")
   )
 
@@ -353,6 +353,49 @@
         (pin passive line (at 3.81 0 180) (length 2.54)
           (name "B" (effects (font (size 1.27 1.27))))
           (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "SF2_FILTER_CAP:SF2_FILTER_CAP" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "FL" (at -5.0833 5.0833 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
+      )
+      (property "Value" "SF2_FILTER_CAP" (at -5.0803 -7.6204 0)
+        (effects (font (size 1.27 1.27)) (justify left bottom))
+      )
+      (property "Footprint" "FIL_SF2_FILTER_CAP" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "MANUFACTURER" "Sensirion" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) (justify bottom) hide)
+      )
+      (symbol "SF2_FILTER_CAP_0_0"
+        (circle (center -5.08 -5.08) (radius 1.27)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (rectangle (start -5.08 -5.08) (end 5.08 5.08)
+          (stroke (width 0.254) (type default))
+          (fill (type background))
+        )
+        (circle (center -5.08 5.08) (radius 1.27)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 2.54)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (circle (center 5.08 -5.08) (radius 1.27)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
+        )
+        (circle (center 5.08 5.08) (radius 1.27)
+          (stroke (width 0.254) (type default))
+          (fill (type none))
         )
       )
     )
@@ -1367,7 +1410,7 @@
     (pin "1" (uuid 194bb849-742e-4895-9785-f9b3f4dad559))
     (pin "2" (uuid 569e24f5-7d83-4cf6-b2b4-7279d8543491))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "JP1") (unit 1)
         )
@@ -1392,7 +1435,7 @@
     )
     (pin "1" (uuid c3d352b2-64e1-4e9c-8986-854d610a8471))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR08") (unit 1)
         )
@@ -1417,7 +1460,7 @@
     )
     (pin "1" (uuid 7f67d2d7-37d9-413c-96af-f94d96784024))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR07") (unit 1)
         )
@@ -1442,7 +1485,7 @@
     )
     (pin "1" (uuid 225a8d51-8891-45ec-8580-3dac9f3fbde9))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#FLG02") (unit 1)
         )
@@ -1471,7 +1514,7 @@
     (pin "1" (uuid 150c59ef-f337-4252-8dda-025ae8dc0574))
     (pin "2" (uuid 400b1180-1ee8-4b3a-8af0-91e6aa45ebcb))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "C1") (unit 1)
         )
@@ -1496,9 +1539,36 @@
     )
     (pin "1" (uuid b3a8e6b1-4261-4442-ac2c-b6824a306e26))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR02") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "SF2_FILTER_CAP:SF2_FILTER_CAP") (at 133.35 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 2717902f-a6b8-457e-a31e-ffe6cd69cfa2)
+    (property "Reference" "FL1" (at 140.97 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Sht45 Filter" (at 140.97 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "FIL_SF2_FILTER_CAP:FIL_SF2_FILTER_CAP" (at 133.35 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Datasheet" "" (at 133.35 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "MANUFACTURER" "Sensirion" (at 133.35 73.66 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (instances
+      (project "EnvironmentSensors"
+        (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
+          (reference "FL1") (unit 1)
         )
       )
     )
@@ -1521,7 +1591,7 @@
     )
     (pin "1" (uuid 56fec8bb-c0eb-4729-adfd-49803c2faa1d))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR014") (unit 1)
         )
@@ -1546,7 +1616,7 @@
     )
     (pin "1" (uuid cec0e88b-7ec2-4e08-95f9-980a224fa579))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR013") (unit 1)
         )
@@ -1571,7 +1641,7 @@
     )
     (pin "1" (uuid dd8ae515-1059-475b-ab3c-36c202fb8eec))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#FLG01") (unit 1)
         )
@@ -1596,7 +1666,7 @@
     )
     (pin "1" (uuid bfb054f9-ce67-437c-b43a-fca32ff26f9d))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR011") (unit 1)
         )
@@ -1607,7 +1677,7 @@
   (symbol (lib_id "Connector:Conn_01x10_Pin") (at 109.22 120.65 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 424b8f30-63a1-47ea-9b7b-4c5e3b2f95aa)
-    (property "Reference" "J2" (at 109.855 105.41 0)
+    (property "Reference" "J2" (at 109.855 107.95 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "Conn_01x10_Pin" (at 109.855 107.95 0)
@@ -1635,9 +1705,9 @@
           (reference "J2") (unit 1)
         )
       )
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
-          (reference "J3") (unit 1)
+          (reference "J2") (unit 1)
         )
       )
     )
@@ -1660,7 +1730,7 @@
     )
     (pin "1" (uuid ab56b9fb-a69d-4b63-b208-f3f52c7b17b4))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR04") (unit 1)
         )
@@ -1677,7 +1747,7 @@
     (property "Value" "Conn_01x10_Pin" (at 27.305 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_JST:JST_PH_S10B-PH-K_1x10_P2.00mm_Horizontal" (at 26.67 52.07 0)
+    (property "Footprint" "Connector_JST:JST_PH_B10B-PH-K_1x10_P2.00mm_Vertical" (at 26.67 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 26.67 52.07 0)
@@ -1699,7 +1769,7 @@
           (reference "J2") (unit 1)
         )
       )
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "J1") (unit 1)
         )
@@ -1728,7 +1798,7 @@
     (pin "1" (uuid d53c18dc-7239-4d4f-a0bc-5f2d491a1ad6))
     (pin "2" (uuid c4d7ace8-9f43-4e3f-80ed-9d311fe1ebf8))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "JP3") (unit 1)
         )
@@ -1753,7 +1823,7 @@
     )
     (pin "1" (uuid c55dc168-74d1-4f19-badf-a47d9dd3c974))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR015") (unit 1)
         )
@@ -1778,7 +1848,7 @@
     )
     (pin "1" (uuid a24d628b-5111-48b8-88c5-00b4718a3718))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR05") (unit 1)
         )
@@ -1807,7 +1877,7 @@
     (pin "1" (uuid e18e1685-7239-4fd7-8a84-512cd56d47c8))
     (pin "2" (uuid 4e3c7e7a-0dbd-46b6-a736-8b5e0d881f1f))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "R3") (unit 1)
         )
@@ -1832,7 +1902,7 @@
     )
     (pin "1" (uuid f2e4fad0-d3be-442a-9212-b6db6a6a0095))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR09") (unit 1)
         )
@@ -1861,7 +1931,7 @@
     (pin "1" (uuid 5fed1f47-75f3-4413-9552-a08f55eac190))
     (pin "2" (uuid 13bdad09-05b6-4b0b-9913-e91a33a92715))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "R2") (unit 1)
         )
@@ -1898,7 +1968,7 @@
     (pin "8" (uuid fbac3b29-6fbc-4171-8283-734f8fc0878c))
     (pin "9" (uuid ebb3ea9e-0bca-4d86-81de-be84b81dd174))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "U3") (unit 1)
         )
@@ -1923,7 +1993,7 @@
     )
     (pin "1" (uuid d2b692c2-1b05-46a3-a44c-d558df470647))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR06") (unit 1)
         )
@@ -1948,7 +2018,7 @@
     )
     (pin "1" (uuid a94c1134-6e0c-42a7-b6ad-7c11d95a047e))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR012") (unit 1)
         )
@@ -1988,7 +2058,7 @@
           (reference "#PWR06") (unit 1)
         )
       )
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR018") (unit 1)
         )
@@ -2017,7 +2087,7 @@
     (pin "1" (uuid 1415b0f7-ed53-4538-938c-d632d9ceb01b))
     (pin "2" (uuid 47ceabda-c38d-4fe7-b593-b0ff0c75ad23))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "R1") (unit 1)
         )
@@ -2042,7 +2112,7 @@
     )
     (pin "1" (uuid 7f658d96-e178-45bd-ad69-80666fb69018))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR010") (unit 1)
         )
@@ -2071,7 +2141,7 @@
     (pin "1" (uuid ad3f4260-df1c-4a15-b614-6b5c3d98e430))
     (pin "2" (uuid a6e69d60-9f03-4207-8588-a5c49423ae7b))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "C2") (unit 1)
         )
@@ -2106,7 +2176,7 @@
     (pin "7" (uuid 1517ac98-4242-4bbb-9b74-99af2eca31fc))
     (pin "8" (uuid ae43f7c8-a526-4aca-8414-f3da47b3854a))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "U2") (unit 1)
         )
@@ -2135,7 +2205,7 @@
     (pin "1" (uuid fd4b14dc-4abe-476d-aa10-11296577590e))
     (pin "2" (uuid 8c414757-dfb6-4e79-b6f8-2a955af2eafe))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "R4") (unit 1)
         )
@@ -2160,7 +2230,7 @@
     )
     (pin "1" (uuid d118936d-5921-46f5-8e81-58897cba4497))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR016") (unit 1)
         )
@@ -2185,7 +2255,7 @@
     )
     (pin "1" (uuid 812ad0de-ba46-421a-9498-bfba8c52398c))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR01") (unit 1)
         )
@@ -2214,7 +2284,7 @@
     (pin "1" (uuid 1be43ca6-bbe0-442b-8bf2-9b10ca6e840d))
     (pin "2" (uuid df8c62e2-87d0-473c-aa36-cccfcb48769d))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "C4") (unit 1)
         )
@@ -2239,7 +2309,7 @@
     )
     (pin "1" (uuid eec569d7-fb13-4696-afde-287d952955bb))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR017") (unit 1)
         )
@@ -2268,7 +2338,7 @@
     (pin "1" (uuid 63b9453c-d846-4f08-8a29-7a2fd9562462))
     (pin "2" (uuid 273178a1-6549-4ba3-b77e-14a75aa26818))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "JP2") (unit 1)
         )
@@ -2293,7 +2363,7 @@
     )
     (pin "1" (uuid 80ef016f-50a3-4aab-ba29-3f887d781297))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "#PWR03") (unit 1)
         )
@@ -2322,7 +2392,7 @@
     (pin "1" (uuid d4f9f0c4-8bd6-4783-8c30-93c488a3a107))
     (pin "2" (uuid 0bee3b14-01b3-478e-a0c2-1d52b3ba49ac))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "C3") (unit 1)
         )
@@ -2353,7 +2423,7 @@
     (pin "3" (uuid 89104486-4a68-4e3b-a656-40e560fefd56))
     (pin "4" (uuid 4d435f0a-862d-4b8a-9941-b9f2d974222b))
     (instances
-      (project "EnviromentSensors"
+      (project "EnvironmentSensors"
         (path "/fc1a0c50-39ba-4cf6-ad6f-af313c028135"
           (reference "U1") (unit 1)
         )
