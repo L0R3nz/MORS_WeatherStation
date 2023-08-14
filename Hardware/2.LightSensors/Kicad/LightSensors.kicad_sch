@@ -1423,30 +1423,6 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 64.77 193.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 045a2372-5dcd-4088-8108-452f3da74574)
-    (property "Reference" "H2" (at 67.31 191.77 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 67.31 194.31 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380" (at 64.77 193.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 64.77 193.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "LightSensors"
-        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
-          (reference "H2") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:PWR_FLAG") (at 17.78 187.96 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 06569f3d-f847-4f8e-88bd-776c41e99360)
@@ -1467,30 +1443,6 @@
       (project "LightSensors"
         (path "/23129930-610b-43a1-9ece-3793e6901ef4"
           (reference "#FLG02") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 73.66 193.04 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 1774a162-9566-4fa6-a31e-b47fb1463e6b)
-    (property "Reference" "H4" (at 76.2 191.77 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 76.2 194.31 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380" (at 73.66 193.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 73.66 193.04 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "LightSensors"
-        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
-          (reference "H4") (unit 1)
         )
       )
     )
@@ -1527,6 +1479,30 @@
       (project "LightSensors"
         (path "/e35789fa-b5f2-47cd-8637-9150d2b422dd"
           (reference "C1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 83.82 184.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 1a92bc8e-cc6d-4b70-a3a7-5e7d28f4d95a)
+    (property "Reference" "H3" (at 86.36 182.88 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 86.36 185.42 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 83.82 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 83.82 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "LightSensors"
+        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
+          (reference "H3") (unit 1)
         )
       )
     )
@@ -1713,6 +1689,30 @@
     )
   )
 
+  (symbol (lib_id "Mechanical:MountingHole") (at 83.82 190.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 38a8a485-b8b2-44fd-83bf-17fc911d2165)
+    (property "Reference" "H4" (at 86.36 189.23 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 86.36 191.77 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 83.82 190.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 83.82 190.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "LightSensors"
+        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
+          (reference "H4") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3.3V") (at 220.98 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c730e17-540f-49a5-8f4d-5f5ac5f8f7dc)
@@ -1890,30 +1890,6 @@
       (project "LightSensors"
         (path "/23129930-610b-43a1-9ece-3793e6901ef4"
           (reference "R5") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Mechanical:MountingHole") (at 73.66 185.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 4b67ccf5-0b0e-4d52-aa4a-28e874e16816)
-    (property "Reference" "H3" (at 76.2 184.15 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 76.2 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380" (at 73.66 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 73.66 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "LightSensors"
-        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
-          (reference "H3") (unit 1)
         )
       )
     )
@@ -2129,7 +2105,7 @@
     (property "Value" "10K" (at 259.08 45.72 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 254.762 44.45 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 254.762 44.45 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 256.54 44.45 0)
@@ -2280,6 +2256,30 @@
     )
   )
 
+  (symbol (lib_id "Mechanical:MountingHole") (at 64.77 184.15 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 92605fc6-a0b1-44e2-a679-6731897eb4d7)
+    (property "Reference" "H1" (at 67.31 182.88 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 67.31 185.42 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 64.77 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 64.77 184.15 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "LightSensors"
+        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
+          (reference "H1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3.3VA") (at 95.25 31.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 95ba0d2b-bd09-4e9e-a268-b68972e5730d)
@@ -2395,7 +2395,7 @@
     (property "Value" "3.3M" (at 128.27 55.88 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 123.952 54.61 90)
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 123.952 54.61 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 125.73 54.61 0)
@@ -2492,30 +2492,6 @@
     )
   )
 
-  (symbol (lib_id "Mechanical:MountingHole") (at 64.77 185.42 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b59ff136-a1b1-4985-8274-68c93ba91c39)
-    (property "Reference" "H1" (at 67.31 184.15 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "MountingHole" (at 67.31 186.69 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3_ISO7380" (at 64.77 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 64.77 185.42 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (instances
-      (project "LightSensors"
-        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
-          (reference "H1") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 170.18 71.12 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cce7398a-1427-4d72-95d9-c74f535dda3f)
@@ -2561,7 +2537,7 @@
     (property "Value" "Conn_01x10_Pin" (at 26.035 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Footprint" "Connector_JST:JST_PH_S10B-PH-K_1x10_P2.00mm_Horizontal" (at 25.4 52.07 0)
+    (property "Footprint" "Connector_JST:JST_PH_B10B-PH-SM4-TB_1x10-1MP_P2.00mm_Vertical" (at 25.4 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 25.4 52.07 0)
@@ -2849,6 +2825,30 @@
       (project "LightSensors"
         (path "/e35789fa-b5f2-47cd-8637-9150d2b422dd"
           (reference "#PWR05") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Mechanical:MountingHole") (at 64.77 190.5 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid f0b8191c-4f44-4c08-b1c7-f6e56d85cf86)
+    (property "Reference" "H2" (at 67.31 189.23 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "MountingHole" (at 67.31 191.77 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "MountingHole:MountingHole_3.2mm_M3" (at 64.77 190.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 64.77 190.5 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (instances
+      (project "LightSensors"
+        (path "/23129930-610b-43a1-9ece-3793e6901ef4"
+          (reference "H2") (unit 1)
         )
       )
     )
