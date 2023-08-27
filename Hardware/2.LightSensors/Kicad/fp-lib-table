@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "AS7331")(type "KiCad")(uri "${KIPRJMOD}/Libs/AS7331/AS7331.pretty")(options "")(descr ""))
   (lib (name "OPT3004")(type "KiCad")(uri "${KIPRJMOD}/Libs/OPT3004/OPT3004.pretty")(options "")(descr ""))
+  (lib (name "Mors_logo")(type "KiCad")(uri "${KIPRJMOD}/Libs/Mors_logo")(options "")(descr ""))
 )
