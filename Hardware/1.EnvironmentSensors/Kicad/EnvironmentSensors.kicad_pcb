@@ -7,8 +7,9 @@
   (paper "A4")
   (title_block
     (title "Enviroment Sensors")
-    (date "2023-08-05")
+    (date "2023-09-03")
     (rev "A")
+    (company "Github.com/L0R3nz")
   )
 
   (layers
