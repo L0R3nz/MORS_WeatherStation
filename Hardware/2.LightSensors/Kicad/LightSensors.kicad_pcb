@@ -5,6 +5,13 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "LightSensors")
+    (date "2023-09-03")
+    (rev "A")
+    (company "Github.com/L0R3nz")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)
