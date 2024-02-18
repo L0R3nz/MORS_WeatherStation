@@ -38,4 +38,4 @@ For more accurate results, I plan to use multiple sensors for temperature, humid
 <!-- ## 4. Rain Sensor Group -->
 
 <!-- Images and diagrams -->
-[SensorDiagram]: img/Sensors-diagram.svg
+[SensorDiagram]: img/Sensors/Sensors-diagram.svg

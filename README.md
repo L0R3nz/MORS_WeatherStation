@@ -7,4 +7,7 @@ This weather station is a passion-driven open-source project aimed at providing 
 # Links
 1. [Project Requirements](doc/Requirements.md)
 2. [Sensors Evaluation](doc/Sensors.md)
+3. [Hardware Documentation](doc/Hardware.md)
 
+______________________________________________________
+M.O.R.S project is based on opensource [tools](doc/Tools.md)
