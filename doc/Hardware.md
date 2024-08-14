@@ -10,12 +10,17 @@
 ### Useful Files
 - [iBom File](/../master/Hardware/1.EnvironmentSensors/Kicad/doc/ibom/) - interactive file which help you while soldering 
 - [Schematic File](/../master/Hardware/1.EnvironmentSensors/Kicad/doc/schematic/EnvironmentSensors.pdf)
+- [Stencil Holder](/../master/Hardware/Tools/StencilHolder/)
 
 Front side of PCB
 ![PCB_KiCad_EnvironmentSensors_Front]
 
 Back side of PCB
 ![PCB_KiCad_EnvironmentSensors_Back]
+
+Stencil Holder 
+![PCB_KiCad_EnvironmentSensors_StencilHolder]
+
 
 ## 12. LightSensors
 ### Jumper list
@@ -37,7 +42,8 @@ Back side of PCB
 
 
 <!-- Images and diagrams -->
-[PCB_KiCad_EnvironmentSensors_Front]: 	img/Hardware/PCB-Kicad-EnvironmentSensors-Front.png
-[PCB_KiCad_EnvironmentSensors_Back]: 	img/Hardware/PCB-Kicad-EnvironmentSensors-Back.png
-[PCB_KiCad_LightSensors_Front]: 	    img/Hardware/PCB-Kicad-LightSensors-Front.png
-[PCB_KiCad_LightSensors_Back]: 	        img/Hardware/PCB-Kicad-LightSensors-Back.png
+[PCB_KiCad_EnvironmentSensors_Front]: 	        img/Hardware/PCB-Kicad-EnvironmentSensors-Front.png
+[PCB_KiCad_EnvironmentSensors_Back]: 	        img/Hardware/PCB-Kicad-EnvironmentSensors-Back.png
+[PCB_KiCad_EnvironmentSensors_StencilHolder]: 	img/Tools/PCB-Kicad-EnvironmentSensors-StencilHolder.png
+[PCB_KiCad_LightSensors_Front]: 	            img/Hardware/PCB-Kicad-LightSensors-Front.png
+[PCB_KiCad_LightSensors_Back]: 	                img/Hardware/PCB-Kicad-LightSensors-Back.png
